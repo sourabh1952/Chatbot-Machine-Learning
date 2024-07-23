@@ -6,7 +6,7 @@ import numpy as np
 from keras.models import load_model
 import json
 import random
-
+nltk.download('punkt')
 # Load necessary files
 lemmatizer = WordNetLemmatizer()
 model = load_model('chatbot_model.h5')
